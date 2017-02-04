@@ -3,7 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Airport Mapper</title>
+    <link rel="stylesheet" href="./assets/stylesheets/map.css">
+    <link rel="stylesheet" href="./assets/stylesheets/sidebar.css">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+    <script type="text/javascript" src="./lib/bundle.js"></script>
+    <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5NvwO2HyR3qDWoFpiqY-v097JW-R_hPI&callback=initMap">
+     </script>
   </head>
   <body>
+    <div id="side-bar">
+      <div id="hide-sidebar-button" class="button"><</div>
+      <div class="logo"></div>
+      <input id="input" class="input" type="text"
+        placeholder="Search">
+    </div>
+    <div id="map"></div>
   </body>
 </html>

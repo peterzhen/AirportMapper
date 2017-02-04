@@ -4,8 +4,7 @@ module.exports = {
   context: __dirname,
   entry: "./lib/airportMapper.js",
   output: {
-    path: path.join(__dirname, 'lib'),
-    filename: "bundle.js"
+  	filename: "./lib/bundle.js"
   },
   module: {
     loaders: [
