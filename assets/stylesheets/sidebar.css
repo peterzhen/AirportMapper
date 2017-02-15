@@ -4,6 +4,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  flex: none;
   align-items: center;
   background: white;
   left: 0px;
