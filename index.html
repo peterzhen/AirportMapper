@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/stylesheets/map.css">
     <link rel="stylesheet" href="./assets/stylesheets/sidebar.css">
     <link rel="stylesheet" href="./assets/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script type="text/javascript" src="./lib/bundle.js"></script>
     <script async defer
        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5NvwO2HyR3qDWoFpiqY-v097JW-R_hPI&libraries=places&callback=initMap">
@@ -13,11 +14,30 @@
   </head>
   <body>
     <div id="side-bar">
-      <div id="hide-sidebar-button" class="button"><</div>
+      <div id="hide-sidebar-button" class="sidebar-button"><</div>
+
       <div class="logo"></div>
-      <div id="search-container">
-        <input id="input" class="input" type="text" placeholder="Enter a location">
+
+      <div id="mode-container">
+        <div id="ruler-button" class="mode-button">
+          <div id="ruler-tooltip" class="tooltip">Nautical Miles</div>
+        </div>
+        <div id="walk-button" class="mode-button">
+          <div id="walk-tooltip" class="tooltip">Walking</div>
+        </div>
+        <div id="drive-button" class="mode-button">
+          <div id="drive-tooltip" class="tooltip">Driving</div>
+        </div>
+        <div id="transit-button" class="mode-button">
+          <div id="transit-tooltip" class="tooltip">Transit</div>
+        </div>
       </div>
+
+      <div id="search-container">
+        <input id="origin" class="input" type="text" autocomplete="new-password" placeholder="Enter Start Location">
+        <input id="destination" class="input" type="text" autocomplete="false" placeholder="Enter End Location">
+      </div>
+
       <div id="results-container"></div>
     </div>
 
