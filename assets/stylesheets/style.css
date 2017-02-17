@@ -7,8 +7,10 @@ html, body {
   font-family: Roboto;
 }
 
-/*body {
+body {
+  left: -200px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-}*/
+  justify-content: flex-start;
+}
