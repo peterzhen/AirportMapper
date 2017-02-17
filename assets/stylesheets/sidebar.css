@@ -41,6 +41,7 @@
   height: 54px;
   width: 165px;
   margin: 10px auto;
+  flex: none;
 }
 
 #mode-container {
