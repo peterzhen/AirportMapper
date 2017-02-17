@@ -4,7 +4,7 @@ Airport Mapper is a web application build with vanilla javascript.  The applicat
 
 # How to Use
 
-Airport Mapper is built in with JavaScript without any frameworks, so you can run `index.html` in the browser to see the application live.  
+Airport Mapper is built in with JavaScript without any frameworks, so you can run `index.html` in the browser to see the application live.  The build has been precompiled with webpack prior.
 
 # Technologies Used
 
