@@ -1,9 +1,12 @@
 #side-bar {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   z-index: 5;
   background: white;
   left: 0px;
-  width: 350px;
+  width: 450px;
   height: 100%;
   box-shadow: 0px 5px 10px grey;
   transition: margin-left 1s ease-in-out;
@@ -107,11 +110,18 @@
   font-size: 12px;
   bottom: -28px;
   left: -50%;
+  z-index: 10;
 }
 
 #search-container {
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 10px;
+}
+
+#search-container > div {
+  height: 40px;
+  margin: 10px 0 10px 0;
+  position: relative;
 }
 
 .input {
@@ -126,12 +136,8 @@
 }
 
 #results-container {
-  height: 60%;
+  height: 100%;
   overflow-y: auto;
-}
-
-#results-container:first-child {
-  border-top: 1px grey solid;
 }
 
 .result {
@@ -143,6 +149,12 @@
   transition: all .3s ease-in-out;
 }
 
+.result:hover {
+  cursor: pointer;
+  background: #e8e8e8;
+  color: black;
+}
+
 .results-label {
   padding: 5px 5px 5px 10px;
   font-family: Roboto;
@@ -150,15 +162,44 @@
   font-size: 12px;
   border-bottom: 1px solid #e8e8e8;
   background: #4885ed;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.results-data {
+  padding: 10px;
+  font-family: Roboto;
+  color: grey;
+  font-size: 14px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.label {
+  position: relative;
+  padding: 15px 0 6px 0;
+  height: 30px;
+  font-family: Roboto;
+  color: grey;
+  font-size: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  text-overflow: ellipsis;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration:underline;
+}
+
+.edit {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  right: 10px;
+}
+
+.edit:hover {
+  cursor: pointer;
 }
 
 .miles-label {
   font-size: 18px;
   padding: 10px;
-}
-
-.result:hover {
-  cursor: pointer;
-  background: #e8e8e8;
-  color: black;
 }
