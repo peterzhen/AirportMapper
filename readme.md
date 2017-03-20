@@ -1,6 +1,6 @@
 # Airport Mapper
 
-Airport Mapper is a web application build with vanilla javascript.  The application allows for airport searches within the United States and it calculates distance between them in nautical miles.  It uses Google Maps and it's services to search, autosuggest and plot it's searches.
+Airport Mapper is a web application built with vanilla javascript.  The application allows for airport searches within the United States and it calculates distance between them in nautical miles.  It uses Google Maps and it's services to search, autosuggest and plot it's searches.
 
 # How to Use
 
