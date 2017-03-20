@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Airport Mapper</title>
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="./lib/bundle.js"></script>
+    <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5NvwO2HyR3qDWoFpiqY-v097JW-R_hPI&libraries=places&callback=initMap">
+     </script>
+  </head>
+  <body>
+    <div id="side-bar">
+      <div id="hide-sidebar-button" class="sidebar-button"><</div>
+
+      <div class="logo"></div>
+
+      <div id="mode-container">
+        <div id="ruler-button" class="mode-button">
+          <div id="ruler-tooltip" class="tooltip">Nautical Miles</div>
+        </div>
+        <div id="walk-button" class="mode-button">
+          <div id="walk-tooltip" class="tooltip">Walking</div>
+        </div>
+        <div id="drive-button" class="mode-button">
+          <div id="drive-tooltip" class="tooltip">Driving</div>
+        </div>
+        <div id="transit-button" class="mode-button">
+          <div id="transit-tooltip" class="tooltip">Transit</div>
+        </div>
+      </div>
+
+      <div id="search-container">
+        <div id="origin-container">
+          <input id="origin" class="input" type="text" placeholder="Enter Start Location">
+          <div id="origin-tooltip" class="tooltip">Edit</div>
+        </div>
+        <div id="destination-container">
+          <input id="destination" class="input" type="text" placeholder="Enter End Location">
+          <div id="destination-tooltip" class="tooltip">Edit</div>
+        </div>
+      </div>
+
+      <div id="results-container"></div>
+    </div>
+
+    <div id="map"></div>
+
+  </body>
+</html>

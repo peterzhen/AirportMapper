@@ -1,0 +1,44 @@
+#results-container {
+  height: 100%;
+  width: 350px;
+  overflow-y: auto;
+}
+
+.result {
+  padding: 10px;
+  font-family: Roboto;
+  color: grey;
+  font-size: 14px;
+  border-bottom: 1px solid #e8e8e8;
+  transition: all .3s ease-in-out;
+}
+
+.result:hover {
+  cursor: pointer;
+  background: #e8e8e8;
+  color: black;
+}
+
+.results-label {
+  padding: 5px 5px 5px 10px;
+  font-family: Roboto;
+  color: white;
+  font-size: 12px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #4885ed;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.results-data {
+  padding: 10px;
+  font-family: Roboto;
+  color: grey;
+  font-size: 14px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.miles-label {
+  font-size: 18px;
+  padding: 10px;
+}
