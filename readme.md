@@ -8,7 +8,7 @@ Airport Mapper is a web and desktop application built with vanilla javascript.  
 
 # How to Use
 
-Airport Mapper is built in with JavaScript without any frameworks, so you can run `index.html` in the browser to see the application live on the web browser.  The build has been precompiled with webpack prior.  
+Airport Mapper is built in with JavaScript without any frameworks, so you can run `index.html` in the browser to see the application live on the web browser.  The build has been precompiled with `webpack` prior.  
 
 To view the application on your OS X device, you need to first have [Node.js](https://nodejs.org/en/).
 
@@ -24,16 +24,16 @@ If you wish to have the program in a executable desktop package, run these follo
 * Run `npm install` to install dependencies
 * Run `npm run build` to open the app in your browser
 
-A new folder should be created within the directory.  The executable desktop package is stored inside the that directory, simply launch to use.
+A new folder should be created within the directory.  The executable desktop package is stored inside that directory, simply launch to use.
 
 
 # Technologies Used
 
-The application was written in ES6 JavaScript, using babel and webpack to compile the files.  The application is wrapped in electron to provide desktop support as well.  
+The application was written in ES6 `JavaScript`, using `babel` and `webpack` to compile the files.  The application is wrapped in electron to provide desktop support as well.  
 
 To handle the autocomplete suggestions, I bound the input field to do a Google Place Search with change in input data.  I used Google Place Search over their AutoComplete Library because of it's ability to restrict type to `airport`.  From there, I filtered the results to only show airports that reside in the United States.  This allows for airport searches using a wide array of keywords, including entering city, zip code or state to do a search.  To prevent over querying, a global `setTimeout` was used to only query an autocomplete when typing is ceased.
 
-Given two locations, I used the Haversine Formula to compute the nautical miles.  I displayed and plotted the points on the map using marks and paths.  The ability to route the distance between aiports using Google Directions Services were also added.  This allowed for walking, driving and transit directions.
+Given two locations, I used the Haversine Formula to compute the nautical miles.  I displayed and plotted the points on the map using marks and paths.  The ability to route the distance between airports using Google Directions Services were also added.  This allowed for walking, driving and transit directions.
 
 # Alternate Approaches
 
